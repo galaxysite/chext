@@ -52,4 +52,7 @@ Halt;
 end;
 end; {next f}
 
+if (ParamCount > 2) and (ParamStr(3) = 'f') then RenameFile(s,s + '.' + ParamStr(2))
+else WriteLn(s + '.' + ParamStr(2));
+
 end.
